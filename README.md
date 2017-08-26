@@ -1,24 +1,25 @@
 # SimplifiedCellHeaderFooter
+史上最科学！Swift 3 UITableView最佳实践 XIB极速实现UITableViewCell,UITableViewHeaderFooterView
 
-史上最科学！Swift 3.0 UITableView最佳实践 XIB极速实现UITableViewCell,UITableViewHeaderFooterView
-
-##开发环境
+## 开发环境
 
  Mac OS 10.12+ / Xcode 8+ / Swift 3+
 ## 支持环境
 iOS 8+, iPhone & iPad
 ## 项目获取
-此处代码由Swift3.1展示，推荐使用Swift项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)，若要使用，请导入文件到您的项目。
+此处代码由Swift3.1展示，推荐使用Swift,项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
+若要使用，请导入文件到您的项目。
 
 ## 功能展示
 
-![desc.gif](http://upload-images.jianshu.io/upload_images/2484280-2e20b067d4103cdc.gif?imageMogr2/auto-orient/strip)
+![功能演示](http://upload-images.jianshu.io/upload_images/2484280-2e20b067d4103cdc.gif?imageMogr2/auto-orient/strip)
 
 
 ## 使用说明
 ### 导入项目
 ####  手动导入
 ![手动导入项目需要将该文件夹的所有内容引入项目中](http://upload-images.jianshu.io/upload_images/2484280-69d65d89763f9de3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 如图所示，将“SimplifiedCellHeaderFooter”文件夹拖入要用到该框架的工程中，在Swift项目中，可直接对其进行使用。
 
 #### 函数调用
@@ -37,7 +38,6 @@ iOS 8+, iPhone & iPad
 ```
  // header 数据源
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        // 根据不同组来使用不同的header或footer
         return tableView.headerFooter(aClass: DemoViewOfHeader1.self, closure: { (viewIn) in
                 let v = viewIn as! DemoViewOfHeader1
                 v.lbl1.text = "section: \(section)"
@@ -109,7 +109,8 @@ extension UIView {
 
 ![关联XIB与Cell](http://upload-images.jianshu.io/upload_images/2484280-7bd28216676cc5bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-通过简单的封装UITableView可以在非常简洁的情况下调用cell,header,footer等视图了，免去了每次在数据源函数判断视图是否为空或在UITableView初始化时注册的麻烦，没有读懂？请原谅我写得不太优美，欢迎去github下载https://github.com/cba023/SimplifiedCellHeaderFooter。亲，学会了吧？赶快去嗨皮吧！
+通过简单的封装UITableView可以在非常简洁的情况下调用cell,header,footer等视图了，免去了每次在数据源函数判断视图是否为空或在UITableView初始化时注册的麻烦。亲，学会了吧？赶快去嗨皮吧！
 
 ## 致读者
-该项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)，可以在那里直接star 或者fork 该项目，它可能会长期的帮助您高效地进行程序开发，当然也欢迎留言，有不足或者错误的地方可以随时指正，您的指导和建议是我前行路上新的动力！
+该项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
+可以在那里直接star 或者fork 该项目，它可能会长期的帮助您高效地进行程序开发，当然也欢迎留言，有不足或者错误的地方可以随时指正，您的指导和建议是我前行路上新的动力！
