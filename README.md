@@ -1,6 +1,5 @@
 # SimplifiedCellHeaderFooter
-
-史上最科学！Swift 3.0 UITableView最佳实践 XIB极速实现UITableViewCell,UITableViewHeaderFooterView
+史上最科学！Swift 3 UITableView最佳实践 XIB极速实现UITableViewCell,UITableViewHeaderFooterView
 
 ##开发环境
 
@@ -8,12 +7,11 @@
 ## 支持环境
 iOS 8+, iPhone & iPad
 ## 项目获取
-此处代码由Swift3.1展示，推荐使用Swift项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
-若要使用，请导入文件到您的项目。
+此处代码由Swift3.1展示，推荐使用Swift,项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)，若要使用，请导入文件到您的项目。
 
 ## 功能展示
 
-![desc.gif](http://upload-images.jianshu.io/upload_images/2484280-2e20b067d4103cdc.gif?imageMogr2/auto-orient/strip)
+![功能演示](http://upload-images.jianshu.io/upload_images/2484280-2e20b067d4103cdc.gif?imageMogr2/auto-orient/strip)
 
 
 ## 使用说明
@@ -38,7 +36,6 @@ iOS 8+, iPhone & iPad
 ```
  // header 数据源
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        // 根据不同组来使用不同的header或footer
         return tableView.headerFooter(aClass: DemoViewOfHeader1.self, closure: { (viewIn) in
                 let v = viewIn as! DemoViewOfHeader1
                 v.lbl1.text = "section: \(section)"
@@ -114,5 +111,4 @@ extension UIView {
 亲，学会了吧？赶快去嗨皮吧！
 
 ## 致读者
-该项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
-可以在那里直接star 或者fork 该项目，它可能会长期的帮助您高效地进行程序开发，当然也欢迎留言，有不足或者错误的地方可以随时指正，您的指导和建议是我前行路上新的动力！
+该项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)，可以在那里直接star 或者fork 该项目，它可能会长期的帮助您高效地进行程序开发，当然也欢迎留言，有不足或者错误的地方可以随时指正，您的指导和建议是我前行路上新的动力！
