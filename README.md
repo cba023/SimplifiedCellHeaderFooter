@@ -1,0 +1,2 @@
+# SimplifiedCellHeaderFooter
+XIB tableViewCell  tableViewHeaderFooterView quickly creating
