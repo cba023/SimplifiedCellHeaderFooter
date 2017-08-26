@@ -64,12 +64,6 @@ class StartTVC: UITableViewController {
                 v.lbl2.text = "as: Header"
                 v.backgroundColor = .yellow
             })
-            return tableView.headerFooter(aClass: DemoViewOfHeader1.self, closure: { (viewIn) in
-                let v = viewIn as! DemoViewOfHeader1
-                v.lbl1.text = "section: \(section)"
-                v.lbl2.text = "as: Header"
-                v.backgroundColor = .orange
-            })
         }
         else {
             return tableView.headerFooter(aClass: DemoViewOfFooter1.self, closure: { (viewIn) in
