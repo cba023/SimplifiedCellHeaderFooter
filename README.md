@@ -110,7 +110,8 @@ extension UIView {
 
 ![关联XIB与Cell](http://upload-images.jianshu.io/upload_images/2484280-7bd28216676cc5bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-通过简单的封装UITableView可以在非常简洁的情况下调用cell,header,footer等视图了，免去了每次在数据源函数判断视图是否为空或在UITableView初始化时注册的麻烦，没有读懂？请原谅我写得不太优美，欢迎去github下载https://github.com/cba023/SimplifiedCellHeaderFooter。亲，学会了吧？赶快去嗨皮吧！
+通过简单的封装UITableView可以在非常简洁的情况下调用cell,header,footer等视图了，免去了每次在数据源函数判断视图是否为空或在UITableView初始化时注册的麻烦，没有读懂？请原谅我写得不太优美，欢迎去github下载https://github.com/cba023/SimplifiedCellHeaderFooter。
+亲，学会了吧？赶快去嗨皮吧！
 
 ## 致读者
 该项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
