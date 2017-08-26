@@ -7,7 +7,8 @@
 ## 支持环境
 iOS 8+, iPhone & iPad
 ## 项目获取
-此处代码由Swift3.1展示，推荐使用Swift,项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)，若要使用，请导入文件到您的项目。
+此处代码由Swift3.1展示，推荐使用Swift,项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
+若要使用，请导入文件到您的项目。
 
 ## 功能展示
 
@@ -18,6 +19,7 @@ iOS 8+, iPhone & iPad
 ### 导入项目
 ####  手动导入
 ![手动导入项目需要将该文件夹的所有内容引入项目中](http://upload-images.jianshu.io/upload_images/2484280-69d65d89763f9de3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 如图所示，将“SimplifiedCellHeaderFooter”文件夹拖入要用到该框架的工程中，在Swift项目中，可直接对其进行使用。
 
 #### 函数调用
