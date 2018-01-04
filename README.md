@@ -1,5 +1,5 @@
 # SimplifiedCellHeaderFooter
-史上最科学！Swift 3 UITableView最佳实践 XIB极速实现UITableViewCell,UITableViewHeaderFooterView
+史上最科学！Swift UITableView最佳实践 XIB极速实现UITableViewCell,UITableViewHeaderFooterView
 
 ## 开发环境
 
