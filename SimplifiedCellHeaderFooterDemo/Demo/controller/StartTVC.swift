@@ -58,40 +58,60 @@ class StartTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // 根据不同组来使用不同的header或footer
         if section % 2 == 0 {
-            return tableView.headerFooter(aClass: DemoViewOfFooter1.self, closure: { (viewIn) in
-                let v = viewIn as! DemoViewOfFooter1
-                v.lbl1.text = "section: \(section)"
-                v.lbl2.text = "as: Header"
-                v.backgroundColor = .yellow
-            })
+//            return tableView.headerFooter(aClass: DemoViewOfFooter1.self, closure: { (viewIn) in
+//                let v = viewIn as! DemoViewOfFooter1
+//                v.lbl1.text = "section: \(section)"
+//                v.lbl2.text = "as: Header"
+//                v.backgroundColor = .yellow
+//            })
+            let hf = tableView.headerFooter(aClass: DemoViewOfFooter1.self)as! DemoViewOfFooter1
+            hf.lbl1.text = "section: \(section)"
+            hf.lbl2.text = "as: Header"
+            hf.backgroundColor = .yellow
+            return hf
         }
         else {
-            return tableView.headerFooter(aClass: DemoViewOfFooter1.self, closure: { (viewIn) in
-                let v = viewIn as! DemoViewOfFooter1
-                v.lbl1.text = "section: \(section)"
-                v.lbl2.text = "as: Header"
-                v.backgroundColor = .yellow
-            })
+//            return tableView.headerFooter(aClass: DemoViewOfFooter1.self, closure: { (viewIn) in
+//                let v = viewIn as! DemoViewOfFooter1
+//                v.lbl1.text = "section: \(section)"
+//                v.lbl2.text = "as: Header"
+//                v.backgroundColor = .yellow
+//            })
+            let hf = tableView.headerFooter(aClass: DemoViewOfHeader1.self)as! DemoViewOfHeader1
+            hf.lbl1.text = "section: \(section)"
+            hf.lbl2.text = "as: Header"
+            hf.backgroundColor = .blue
+            return hf
         }
     }
     
     // footer 数据源
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         if section % 2 == 1 {
-            return tableView.headerFooter(aClass: DemoViewOfHeader1.self, closure: { (viewIn) in
-                let v = viewIn as! DemoViewOfHeader1
-                v.lbl1.text = "section: \(section)"
-                v.lbl2.text = "as: Footer"
-                v.backgroundColor = .green
-            })
+//            return tableView.headerFooter(aClass: DemoViewOfHeader1.self, closure: { (viewIn) in
+//                let v = viewIn as! DemoViewOfHeader1
+//                v.lbl1.text = "section: \(section)"
+//                v.lbl2.text = "as: Footer"
+//                v.backgroundColor = .green
+//            })
+            let hf = tableView.headerFooter(aClass: DemoViewOfHeader1.self)as! DemoViewOfHeader1
+            hf.lbl1.text = "section: \(section)"
+            hf.lbl2.text = "as: Footer"
+            hf.backgroundColor = .green
+            return hf
         }
         else {
-            return tableView.headerFooter(aClass: DemoViewOfFooter1.self, closure: { (viewIn) in
-                let v = viewIn as! DemoViewOfFooter1
-                v.lbl1.text = "section: \(section)"
-                v.lbl2.text = "as: Footer"
-                v.backgroundColor = .cyan
-            })
+//            return tableView.headerFooter(aClass: DemoViewOfFooter1.self, closure: { (viewIn) in
+//                let v = viewIn as! DemoViewOfFooter1
+//                v.lbl1.text = "section: \(section)"
+//                v.lbl2.text = "as: Footer"
+//                v.backgroundColor = .cyan
+//            })
+            let hf = tableView.headerFooter(aClass: DemoViewOfFooter1.self)as! DemoViewOfFooter1
+            hf.lbl1.text = "section: \(section)"
+            hf.lbl2.text = "as: Footer"
+            hf.backgroundColor = .cyan
+            return hf
         }
     }
     
