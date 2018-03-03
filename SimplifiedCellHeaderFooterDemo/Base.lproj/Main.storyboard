@@ -64,16 +64,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TkE-P8-5zu" secondAttribute="bottom" id="51e-ab-uQz"/>
                             <constraint firstAttribute="trailing" secondItem="TkE-P8-5zu" secondAttribute="trailing" id="5ml-eO-tRy"/>
+                            <constraint firstItem="f6e-cU-Ivp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="6Hc-gm-A0Q"/>
                             <constraint firstItem="TkE-P8-5zu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FjX-ng-ybg"/>
                             <constraint firstItem="mmk-cZ-X9G" firstAttribute="leading" secondItem="rA5-Ed-1od" secondAttribute="leading" id="JLR-yP-CJk"/>
                             <constraint firstItem="f6e-cU-Ivp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="KME-xv-W81"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mmk-cZ-X9G" secondAttribute="trailing" constant="20" symbolic="YES" id="L1J-kl-TMT"/>
                             <constraint firstItem="GIb-dV-pgO" firstAttribute="top" secondItem="rA5-Ed-1od" secondAttribute="bottom" constant="5" id="NsA-yE-2Dg"/>
-                            <constraint firstItem="f6e-cU-Ivp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Q5L-EH-rWP"/>
                             <constraint firstItem="mmk-cZ-X9G" firstAttribute="top" secondItem="GIb-dV-pgO" secondAttribute="bottom" constant="5" id="Snf-bd-557"/>
                             <constraint firstAttribute="trailing" secondItem="GIb-dV-pgO" secondAttribute="trailing" constant="5" id="VWo-cR-11x"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TkE-P8-5zu" secondAttribute="bottom" id="Y9B-t0-ozw"/>
                             <constraint firstItem="GIb-dV-pgO" firstAttribute="leading" secondItem="rA5-Ed-1od" secondAttribute="leading" id="mi6-S7-Oux"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rA5-Ed-1od" secondAttribute="trailing" constant="12.5" id="rc3-Rc-fcb"/>
                             <constraint firstItem="rA5-Ed-1od" firstAttribute="leading" secondItem="f6e-cU-Ivp" secondAttribute="trailing" constant="15" id="rhn-rb-orS"/>
                             <constraint firstItem="rA5-Ed-1od" firstAttribute="top" secondItem="f6e-cU-Ivp" secondAttribute="top" id="wSb-Q0-b0J"/>
                         </constraints>
@@ -82,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952.5" y="776.4084507042254"/>
+            <point key="canvasLocation" x="418" y="784"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="12F-Rd-y6Q">
@@ -100,7 +102,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7y-ac-RCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="776.76161919040487"/>
+            <point key="canvasLocation" x="-311" y="784"/>
         </scene>
     </scenes>
     <resources>
