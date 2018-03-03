@@ -8,7 +8,7 @@
 iOS 8+, iPhone & iPad
 ## 项目获取
 此处代码由Swift展示，推荐使用Swift,项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
-若要使用，请导入文件到您的项目。
+若要使用，请导入文件到您的项目。另有Objective-C版本，请打开[SimplifiedCellHeaderFooterOC](https://github.com/cba023/SimplifiedCellHeaderFooterOC) 链接即可。
 
 ## 功能展示
 
