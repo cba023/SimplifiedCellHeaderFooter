@@ -19,7 +19,7 @@ extension UITableView {
         return cell
     }
     
-    // MARK: - 复用header或footer视图
+    // MARK: - 复用header或footer视图(XIB)
     func headerFooter(aClass: UIView.Type?) -> UIView? {
         let className = "\(String(describing: aClass!))"
         var headerFooter:UIView? = (self.dequeueReusableHeaderFooterView(withIdentifier: className))

@@ -3,11 +3,11 @@
 
 ## 开发环境
 
- Mac OS 10.12+ / Xcode 8+ / Swift 3+,兼容Swift4(support Swift4)
+ Mac OS 10.12+ / Xcode 8+ / Swift 3+
 ## 支持环境
 iOS 8+, iPhone & iPad
 ## 项目获取
-此处代码由Swift3.1展示，推荐使用Swift,项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
+此处代码由Swift展示，推荐使用Swift,项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
 若要使用，请导入文件到您的项目。
 
 ## 功能展示
@@ -25,6 +25,7 @@ iOS 8+, iPhone & iPad
 #### 函数调用
 
 * cell数据源调用
+
 ```
 // cell 数据源
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,16 +36,28 @@ iOS 8+, iPhone & iPad
 ```
 
 * header数据源 或 footer数据源
+
 ```
- // header 数据源
+ 
+// header 数据源
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return tableView.headerFooter(aClass: DemoViewOfHeader1.self, closure: { (viewIn) in
-                let v = viewIn as! DemoViewOfHeader1
-                v.lbl1.text = "section: \(section)"
-                v.lbl2.text = "as: Header"
-                v.backgroundColor = .orange
-            })
+        // 根据不同组来使用不同的header或footer
+        if section % 2 == 0 {
+            let hf = tableView.headerFooter(aClass: DemoViewOfFooter1.self)as! DemoViewOfFooter1
+            hf.lbl1.text = "section: \(section)"
+            hf.lbl2.text = "as: Header"
+            hf.backgroundColor = .yellow
+            return hf
+        }
+        else {
+            let hf = tableView.headerFooter(aClass: DemoViewOfHeader1.self)as! DemoViewOfHeader1
+            hf.lbl1.text = "section: \(section)"
+            hf.lbl2.text = "as: Header"
+            hf.backgroundColor = .blue
+            return hf
+        }
     }
+    
 ```
 
 ### 实现原理
@@ -54,6 +67,7 @@ iOS 8+, iPhone & iPad
 #### 函数封装
 
 cell数据源函数封装
+
 
 ```
  // 基于直接加载XIB复用Cell的函数
@@ -68,29 +82,23 @@ cell数据源函数封装
 ```
 
 header或footer数据源函数封装
+
+
 ```
-// MARK: - 复用header或footer视图
-    func headerFooter(aClass: UIView.Type?, closure:(UIView)->()) -> BaseTableViewHeaderFooterView {
-        let hf: BaseTableViewHeaderFooterView?
+// MARK: - 复用header或footer视图(XIB)
+    func headerFooter(aClass: UIView.Type?) -> UIView? {
         let className = "\(String(describing: aClass!))"
-        var headerFooter = self.dequeueReusableHeaderFooterView(withIdentifier: className)
+        var headerFooter:UIView? = (self.dequeueReusableHeaderFooterView(withIdentifier: className))
         // 新创建
         if headerFooter == nil {
-            headerFooter = BaseTableViewHeaderFooterView(reuseIdentifier: className)
-            hf = headerFooter as? BaseTableViewHeaderFooterView
-            hf?.viewReuse = UIView.loadViewFromBundle1st(view: className)
-            hf?.viewReuse.frame = (headerFooter?.bounds)!
-            headerFooter?.addSubview((hf?.viewReuse)!)
+            headerFooter = ((Bundle.main.loadNibNamed(className, owner: nil, options: nil)?.first) as! UIView)
         }
-        else {
-            hf = headerFooter as? BaseTableViewHeaderFooterView
-        }
-        closure((hf?.viewReuse)!)
-        return hf!
+        return headerFooter;
     }
 ```
 
  XIB第一个视图的加载
+ 
 ```
 // MARK: - 加载XIB第一个视图
 extension UIView {
@@ -114,3 +122,5 @@ extension UIView {
 ## 致读者
 该项目已经上传至github中[SimplifiedCellHeaderFooter](https://github.com/cba023/SimplifiedCellHeaderFooter)(https://github.com/cba023/SimplifiedCellHeaderFooter)
 可以在那里直接star 或者fork 该项目，它可能会长期的帮助您高效地进行程序开发，当然也欢迎留言，有不足或者错误的地方可以随时指正，您的指导和建议是我前行路上新的动力！
+
+
