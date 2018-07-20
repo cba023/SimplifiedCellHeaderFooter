@@ -47,9 +47,15 @@ class StartTVC: UITableViewController {
             cell.lblSubTitle.text = "\(indexPath.section)  ==> \(indexPath.row)"
             return cell
         }
-        else {
+        else if indexPath.section % 3 == 1 {
             let cell = tableView.cell(aClass: DemoCell2.self)  as! DemoCell2
             cell.lbl1.text = "\(indexPath.section)  ==> \(indexPath.row)"
+            return cell
+        }
+        else {
+            let cell = tableView.cell(anyClass: DemoCell3.self)  as! DemoCell3
+            cell.lbl1.text = "\(indexPath.section)  ==> \(indexPath.row)"
+            cell.lbl2.text = "DemoCell3"
             return cell
         }
     }
@@ -57,18 +63,24 @@ class StartTVC: UITableViewController {
     // header 数据源
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // 根据不同组来使用不同的header或footer
-        if section % 2 == 0 {
+        if section % 3 == 0 {
             let hf = tableView.headerFooter(aClass: DemoViewOfFooter1.self)as! DemoViewOfFooter1
             hf.lbl1.text = "section: \(section)"
             hf.lbl2.text = "as: Header"
             hf.backgroundColor = .yellow
             return hf
         }
-        else {
+        else if section % 3 == 1 {
             let hf = tableView.headerFooter(aClass: DemoViewOfHeader1.self)as! DemoViewOfHeader1
             hf.lbl1.text = "section: \(section)"
             hf.lbl2.text = "as: Header"
             hf.backgroundColor = .blue
+            return hf
+        }
+        else {
+            let hf = tableView.headerFooter(anyClass: DemoViewOfHeader2.self) as! DemoViewOfHeader2
+            hf.lbl1.text = "section: \(section)"
+            hf.lbl2.text = "DemoViewOfHeader2 as: Header"
             return hf
         }
     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04563E8920400C720058D472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04563E8820400C720058D472 /* Assets.xcassets */; };
+		4DDE32D62101DCAC002490A7 /* DemoCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE32D52101DCAC002490A7 /* DemoCell3.swift */; };
+		4DDE32D82101F74D002490A7 /* DemoViewOfHeader2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE32D72101F74D002490A7 /* DemoViewOfHeader2.swift */; };
 		78534ABB1F50F28A00F93782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78534ABA1F50F28A00F93782 /* AppDelegate.swift */; };
 		78534ABD1F50F28A00F93782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78534ABC1F50F28A00F93782 /* ViewController.swift */; };
 		78534AC01F50F28A00F93782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78534ABE1F50F28A00F93782 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		04563E8820400C720058D472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DDE32D52101DCAC002490A7 /* DemoCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCell3.swift; sourceTree = "<group>"; };
+		4DDE32D72101F74D002490A7 /* DemoViewOfHeader2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewOfHeader2.swift; sourceTree = "<group>"; };
 		78534AB71F50F28A00F93782 /* SimplifiedCellHeaderFooterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplifiedCellHeaderFooterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78534ABA1F50F28A00F93782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78534ABC1F50F28A00F93782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,10 +125,12 @@
 				78534AE11F50F76700F93782 /* DemoCell1.xib */,
 				78534AE41F50F77600F93782 /* DemoCell2.swift */,
 				78534AE51F50F77600F93782 /* DemoCell2.xib */,
+				4DDE32D52101DCAC002490A7 /* DemoCell3.swift */,
 				78534AE81F50F79D00F93782 /* DemoViewOfHeader1.swift */,
 				78534AEA1F50F7A400F93782 /* DemoViewOfHeader1.xib */,
 				78534AF01F50F95000F93782 /* DemoViewOfFooter1.swift */,
 				78534AF21F50F95700F93782 /* DemoViewOfFooter1.xib */,
+				4DDE32D72101F74D002490A7 /* DemoViewOfHeader2.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -161,7 +167,7 @@
 				TargetAttributes = {
 					78534AB61F50F28A00F93782 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 69CVW24Z53;
+						DevelopmentTeam = HC455FCVK2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -208,9 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDE32D62101DCAC002490A7 /* DemoCell3.swift in Sources */,
 				78534AE91F50F79D00F93782 /* DemoViewOfHeader1.swift in Sources */,
 				78534ABD1F50F28A00F93782 /* ViewController.swift in Sources */,
 				78534ABB1F50F28A00F93782 /* AppDelegate.swift in Sources */,
+				4DDE32D82101F74D002490A7 /* DemoViewOfHeader2.swift in Sources */,
 				78534AD21F50F5EE00F93782 /* SimplifiedCellHeaderFooter.swift in Sources */,
 				78534AE21F50F76700F93782 /* DemoCell1.swift in Sources */,
 				78534AE61F50F77600F93782 /* DemoCell2.swift in Sources */,
@@ -350,7 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69CVW24Z53;
+				DEVELOPMENT_TEAM = HC455FCVK2;
 				INFOPLIST_FILE = SimplifiedCellHeaderFooterDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -365,7 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69CVW24Z53;
+				DEVELOPMENT_TEAM = HC455FCVK2;
 				INFOPLIST_FILE = SimplifiedCellHeaderFooterDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
