@@ -10,8 +10,8 @@ import UIKit
 
 extension UITableView {
     // 基于直接加载XIB复用Cell的函数
-    func cell(aClass: UITableViewCell.Type?) -> UITableViewCell? {
-        let className = "\(String(describing: aClass!))"
+    func cell(nibClass: UITableViewCell.Type?) -> UITableViewCell? {
+        let className = "\(String(describing: nibClass!))"
         var cell = self.dequeueReusableCell(withIdentifier: className)
         if cell == nil {
             cell = (Bundle.main.loadNibNamed(className, owner: nil, options: nil)?.first as! UITableViewCell)
@@ -19,7 +19,7 @@ extension UITableView {
         return cell
     }
     
-    // 基于直接加载XIB复用Cell的函数
+    // 基于直接加载手写代码复用Cell的函数
     func cell(anyClass: UITableViewCell.Type) -> UITableViewCell? {
         let className = "\(String(describing: anyClass))"
         var cell = self.dequeueReusableCell(withIdentifier: className)
@@ -33,9 +33,9 @@ extension UITableView {
     }
 
     
-    // MARK: - 复用header或footer视图(XIB)
-    func headerFooter(aClass: UIView.Type?) -> UIView? {
-        let className = "\(String(describing: aClass!))"
+    // 复用header或footer视图(XIB)
+    func headerFooter(nibClass: UIView.Type?) -> UIView? {
+        let className = "\(String(describing: nibClass!))"
         var headerFooter:UIView? = (self.dequeueReusableHeaderFooterView(withIdentifier: className))
         // 新创建
         if headerFooter == nil {
@@ -44,7 +44,7 @@ extension UITableView {
         return headerFooter;
     }
     
-    // MARK: - 复用header或footer视图(XIB)
+    // 复用header或footer视图(手写代码)
     func headerFooter(anyClass: UIView.Type?) -> UIView? {
         let className = "\(String(describing: anyClass!))"
         var headerFooter:UIView? = self.dequeueReusableHeaderFooterView(withIdentifier: className)
