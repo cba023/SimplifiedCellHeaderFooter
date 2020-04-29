@@ -15,13 +15,16 @@ Objective-C版本：[SimplifiedCellHeaderFooterOC](https://github.com/cba023/Sim
 
 ## 功能展示
 
-![功能演示](http://upload-images.jianshu.io/upload_images/2484280-2e20b067d4103cdc.gif?imageMogr2/auto-orient/strip)
+> 参见：https://www.jianshu.com/p/b561d7de9caf
+
 
 
 ## 使用说明
 ### 导入项目
 ####  手动导入
-![手动导入项目需要将该文件夹的所有内容引入项目中](http://upload-images.jianshu.io/upload_images/2484280-69d65d89763f9de3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+> 参见：https://www.jianshu.com/p/b561d7de9caf
+
 
 如图所示，将“SimplifiedCellHeaderFooter”文件夹拖入要用到该框架的工程中，在Swift项目中，可直接对其进行使用。
 
@@ -221,10 +224,8 @@ Objective-C版本：[SimplifiedCellHeaderFooterOC](https://github.com/cba023/Sim
 #### XIB创建与关联
 * 创建cell和XIB，创建后要检查XIB与复用的cell（header或footer）是否关联
 
+> 参见：https://www.jianshu.com/p/b561d7de9caf
 
-![创建Cell和XIB](http://upload-images.jianshu.io/upload_images/2484280-337f13daf3c73474.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![关联XIB与Cell](http://upload-images.jianshu.io/upload_images/2484280-7bd28216676cc5bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 通过简单的封装UITableView可以在非常简洁的情况下调用cell,header,footer等视图了，免去了每次在数据源函数判断视图是否为空或在UITableView初始化时注册的麻烦。亲，学会了吧？赶快去嗨皮吧！
 
