@@ -1,9 +1,11 @@
 # SimplifiedCellHeaderFooter
 史上最科学！Swift UITableView最佳实践 XIB极速实现UITableViewCell,UITableViewHeaderFooterView
 
+> https://www.jianshu.com/p/b561d7de9caf
+
 ## 开发环境
 
- Mac OS 10.12+ / Xcode 8+ / Swift 3+
+ Mac OS 10.15+ / Swift
 ## 支持环境
 iOS 8+, iPhone & iPad
 ## 项目获取
